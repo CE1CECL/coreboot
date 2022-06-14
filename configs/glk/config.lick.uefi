@@ -12,6 +12,6 @@ CONFIG_FSP_M_FILE="3rdparty/blobs/mainboard/google/octopus/lick/fspm.bin"
 CONFIG_FSP_S_FILE="3rdparty/blobs/mainboard/google/octopus/lick/fsps.bin"
 CONFIG_CPU_MICROCODE_CBFS_EXTERNAL_BINS=y
 CONFIG_CPU_UCODE_BINARIES="3rdparty/blobs/mainboard/google/octopus/lick/cpu_microcode_blob.bin"
-CONFIG_LOCK_MANAGEMENT_ENGINE=y
+CONFIG_DO_NOT_TOUCH_DESCRIPTOR_REGION=y
 CONFIG_ADD_FSP_BINARIES=y
 CONFIG_PAYLOAD_TIANOCORE=y
