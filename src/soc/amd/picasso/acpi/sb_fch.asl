@@ -173,6 +173,7 @@ Device (FUR2) {
 				Exclusive, , , IRQR)
 			{ 0 }
 			Memory32Fixed (ReadWrite, APU_UART2_BASE, 0x1000)
+			Memory32Fixed (ReadWrite, APU_DMAC2_BASE, 0x1000)
 		}
 		CreateDWordField (Local0, IRQR._INT, IRQN)
 		If (PICM) {
@@ -183,6 +184,7 @@ Device (FUR2) {
 		If (IRQN == 0x1f) {
 			Return (ResourceTemplate() {
 				Memory32Fixed (ReadWrite, APU_UART2_BASE, 0x1000)
+				Memory32Fixed (ReadWrite, APU_DMAC2_BASE, 0x1000)
 			})
 		} Else {
 			Return (Local0)
@@ -204,6 +206,7 @@ Device (FUR3) {
 				Exclusive, , , IRQR)
 			{ 0 }
 			Memory32Fixed (ReadWrite, APU_UART3_BASE, 0x1000)
+			Memory32Fixed (ReadWrite, APU_DMAC3_BASE, 0x1000)
 		}
 		CreateDWordField (Local0, IRQR._INT, IRQN)
 		If (PICM) {
@@ -214,6 +217,7 @@ Device (FUR3) {
 		If (IRQN == 0x1f) {
 			Return (ResourceTemplate() {
 				Memory32Fixed (ReadWrite, APU_UART3_BASE, 0x1000)
+				Memory32Fixed (ReadWrite, APU_DMAC3_BASE, 0x1000)
 			})
 		} Else {
 			Return (Local0)
