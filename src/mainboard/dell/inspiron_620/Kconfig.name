@@ -1,0 +1,2 @@
+config BOARD_DELL_INSPIRON_620
+	bool "Inspiron 620"

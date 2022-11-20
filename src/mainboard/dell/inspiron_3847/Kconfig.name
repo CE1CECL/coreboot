@@ -1,0 +1,2 @@
+config BOARD_DELL_INSPIRON_3847
+	bool "Inspiron 3847"

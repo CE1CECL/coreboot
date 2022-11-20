@@ -30,9 +30,12 @@ type PCIDevice interface {
 }
 
 type InteltoolData struct {
-	GPIO map[uint16]uint32
-	RCBA map[uint16]uint32
-	IGD  map[uint32]uint32
+	GPIO   map[uint16]uint32
+	RCBA   map[uint16]uint32
+	IOBP   map[uint32]uint32
+	IGD    map[uint32]uint32
+	MCHBAR map[uint16]uint32
+	PMBASE map[uint16]uint32
 }
 
 type DMIData struct {
